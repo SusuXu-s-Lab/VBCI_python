@@ -17,7 +17,7 @@ def main():
     os.makedirs(output_location, exist_ok=True)
 
     # Import data
-    with rasterio.open(os.path.join(data_location, 'PR_BD.tif')) as src:
+    with rasterio.open(os.path.join(data_location, 'PR_DPM.tif')) as src:
         Y = src.read(1)
         Y_R = src.transform
 
